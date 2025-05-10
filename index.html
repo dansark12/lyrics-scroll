@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lyrics Scroll</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&family=Syne:wght@800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      background-color: #fff;
+    }
+
+    .marquee-wrapper {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      padding: 16px 0;
+      cursor: pointer;
+      line-height: 2.2;
+    }
+
+    .marquee-content {
+      display: inline-block;
+      font-family: 'Space Mono', monospace;
+      font-size: 20px;
+      color: #111;
+      text-transform: uppercase;
+      animation: scroll-left 90s linear infinite;
+      animation-play-state: paused;
+      transition: font-size 0.5s ease, color 0.5s ease, font-family 0.9s ease;
+    }
+
+    .marquee-wrapper:hover .marquee-content {
+      animation-play-state: running;
+      font-size: 28px;
+      color: #20CE88;
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+    }
+
+    .marquee-icon {
+      height: 26px;
+      vertical-align: middle;
+      margin: 0 12px;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="marquee-wrapper">
+    <div class="marquee-content">
+      she writes what she feels, hoping to appeal, to the court of judges within her own mind. and while the lawyers debate, and the jury deliberates, she can't help but sit there paralyzed
+      <img class="marquee-icon" src="https://i.imgur.com/VGbowTQ.png" alt="pyramid eye" />
+    </div>
+  </div>
+
+  <div class="marquee-wrapper">
+    <div class="marquee-content">
+      like sunflowers in a field, wilting towards the sun, begging for attention. I know how you really feel, grasping at straws, craving recognition.
+      <img class="marquee-icon" src="https://i.imgur.com/GVWOyHB.png" alt="sun" />
+    </div>
+  </div>
+
+  <div class="marquee-wrapper">
+    <div class="marquee-content">
+      they say the fear of heights is the fear of falling, well i guess that means i’m scared of you.
+      <img class="marquee-icon" src="https://i.imgur.com/qqzLcsN.png" alt="fall" />
+    </div>
+  </div>
+
+  <div class="marquee-wrapper">
+    <div class="marquee-content">
+      so i let jealousy pass me over, like water on wax skin. indifference is my broker, and she says it’s time to start selling.
+      <img class="marquee-icon" src="https://i.imgur.com/Two5Ces.png" alt="jealousy" />
+    </div>
+  </div>
+
+  <div class="marquee-wrapper">
+    <div class="marquee-content">
+      She’s a contradiction, full of confliction, She’s not one you’ll ever know. And while she wants to stay steady, she isn’t ready for that kind of constricting love. Yeah she’s a chaos queen, the worst you’ve ever seen, or the best menace of your life. While she’s not out on the scene she’s roaming free, Riding the carousel in her mind.
+      <img class="marquee-icon" src="https://i.imgur.com/Uti3Dog.png" alt="horse" />
+    </div>
+  </div>
+
+  <div class="marquee-wrapper">
+    <div class="marquee-content">
+      i don’t know how else to explain but i’ll try my best for you. reality feels like fantasy, and fantasy feels like the truth.
+      <img class="marquee-icon" src="https://i.imgur.com/Qd4p41D.png" alt="alice" />
+    </div>
+  </div>
+
+</body>
+</html>
